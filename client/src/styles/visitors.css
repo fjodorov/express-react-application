@@ -1,0 +1,35 @@
+
+.visitors__page{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 65px 50px 0px 50px;
+}
+.messages__list{
+    width: 45%;
+}
+
+.visitors__list{
+    width: 45%;
+}
+
+.list__header{
+    color: black;
+}
+
+.list__item{
+    color: black;
+}
+
+.li__number{
+    color: black;
+    font-weight: 400;
+}
+
+.collection-header{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    text-align: center;
+    justify-content: space-between;
+}

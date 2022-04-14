@@ -1,0 +1,167 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+html {
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+.navigation{
+    position: fixed;
+}
+
+.myContainer{
+    height: 100vh;
+}
+
+.mainPageInner{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainPage{
+    height: 100%;
+    width: 100%;
+    background: url("../images/bc2.png") no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+
+.header{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.main__header{
+    margin: 0;
+    padding: 0;
+    font-size: 100px;
+    text-transform: uppercase;
+    font-weight: 700;
+
+}
+
+.sub__header{
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.social{
+    display: flex;
+    flex-direction: row;
+    font-size: 40px;
+}
+
+.social__icons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+
+}
+
+.icon__item{
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    border: 3px solid white;
+    transition: background-color 0.2s linear;
+}
+.icon__item:hover{
+    background-color: white;
+    cursor: pointer;
+}
+
+.icon__item:hover i{
+    color: black;
+}
+
+.social__icon{
+    display: block;
+    margin: 0 auto;
+}
+
+.admin__login{
+    position: absolute;
+    color: #fff;
+    font-size: 36px;
+    right: 10px;
+    bottom: 10px;
+}
+.admin__login:hover{
+   cursor: pointer;
+}
+
+
+
+@media (max-width: 900px) {
+    .main__header{
+         font-size: 70px;
+    }
+    
+    .sub__header{
+        font-size: 30px;
+    }
+    
+    .social{
+        font-size: 30px;
+    }
+    .social__icon{
+        padding: 10px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .main__header{
+         font-size: 60px;
+    }
+    
+    .sub__header{
+        font-size: 20px;
+    }
+    
+    .social{
+        font-size: 30px;
+        flex-wrap: wrap;
+    }
+
+    .social__icon{
+        padding: 10px;
+    }
+
+  }
+
+  @media (max-width: 400px) {
+    .main__header{
+         font-size: 40px;
+    }
+    
+    .sub__header{
+        font-size: 20px;
+    }
+    
+    
+    .social__icons{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        row-gap: 10px;
+    }
+  }
